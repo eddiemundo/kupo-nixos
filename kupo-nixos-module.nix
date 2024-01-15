@@ -153,7 +153,10 @@ in  with lib; {
           RestrictSUIDSGID = true;
           StateDirectory =  lib.removePrefix workDirBase cfg.workDir;
           SystemCallArchitectures = "native";
-          SystemCallFilter = [ "~@cpu-emulation @debug @keyring @mount @obsolete @privileged @setuid @resources" ];
+          SystemCallFilter = [ "~@cpu-emulation @debug @keyring @mount @obsolete
+          @privileged @setuid mbind migrate_pages move_pages nice
+          sched_setaffinity sched_setattr sched_setparam sched_setscheduler
+          setpriority setrlimit" ];
           UMask = "0077";
           User = cfg.user;
           WorkingDirectory = cfg.workDir;
