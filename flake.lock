@@ -420,16 +420,16 @@
       "locked": {
         "lastModified": 1705358044,
         "narHash": "sha256-geXWfR3QU6bxWfDXGSp9ACpE/x2/H30bJ2+Nqfua5t8=",
-        "ref": "release/v2.7",
+        "owner": "eddiemundo",
+        "repo": "kupo",
         "rev": "d9702b7c710cf63924024acd606ea52509671d56",
-        "revCount": 567,
-        "type": "git",
-        "url": "file:///home/jon/projects/kupo"
+        "type": "github"
       },
       "original": {
+        "owner": "eddiemundo",
         "ref": "release/v2.7",
-        "type": "git",
-        "url": "file:///home/jon/projects/kupo"
+        "repo": "kupo",
+        "type": "github"
       }
     },
     "lowdown-src": {

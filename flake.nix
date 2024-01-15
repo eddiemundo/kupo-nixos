@@ -17,8 +17,8 @@
     # iohk-nix.inputs.nixpkgs.follows = "haskell-nix/nixpkgs";
     kupo = {
       # 2.7.2
-      url = "git+file:///home/jon/projects/kupo?ref=release/v2.7";
-      # url = github:CardanoSolutions/kupo;
+      # url = "git+file:///home/jon/projects/kupo?ref=release/v2.7";
+      url = github:eddiemundo/kupo?ref=release/v2.7;
       flake = false;
     };
     chap = {
