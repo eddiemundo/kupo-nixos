@@ -43,6 +43,9 @@
             ];
         };
         inputMap = { "https://input-output-hk.github.io/cardano-haskell-packages" = chap; };
+        modules = [
+          { packages.kupo.flags.production = true; }
+        ];
       });
       flake = perSystem (system: project.${system}.flake { });
     in
