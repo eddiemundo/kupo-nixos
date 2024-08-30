@@ -18,7 +18,7 @@
     kupo = {
       # 2.7.2
       # url = "git+file:///home/jon/projects/kupo?ref=release/v2.7";
-      url = github:eddiemundo/kupo?ref=release/v2.7;
+      url = github:eddiemundo/kupo?ref=release/v2.9;
       flake = false;
     };
     chap = {
@@ -32,7 +32,7 @@
       pkgs = perSystem (system: import nixpkgs { inherit system; overlays =
         [haskell-nix.overlay iohk-nix.overlays.crypto iohk-nix.overlays.haskell-nix-crypto]; inherit (haskell-nix) config; });
       project = perSystem (system: pkgs.${system}.haskell-nix.project {
-        compiler-nix-name = "ghc963";
+        compiler-nix-name = "ghc96";
         projectFileName = "cabal.project";
         src = nixpkgs.lib.cleanSourceWith {
           name = "kupo-src";
